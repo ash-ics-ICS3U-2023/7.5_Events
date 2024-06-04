@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 
+<!-- index.html -->
+
 <html>
-  <head>
-    <title>ASH Template</title>
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    
-  </body>
+
+<head>
+    <title>4.5 - Events in HTML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!-- Don't forget to load the script file! -->
+
+</head>
+
+<body>
+    <h1>Events in HTML</h1>
+
+    <div class="normal" id="mouse_events">
+        <h3>Some Mouse Events (<a href="https://www.w3schools.com/jsref/obj_mouseevent.asp" target="_blank">there are more</a>)</h3>
+
+        <ul>
+            <li>The mouseover event triggers when the mouse pointer enters the div element, and its child elements.</li>
+            <li>The mouseenter event is only triggered when the mouse pointer enters the div element.</li>
+            <li>The onmousemove event triggers every time the mouse pointer is moved over the div element.</li>
+        </ul>
+
+        <div class="mouse" id="over">
+            <h3 class="mouse">Mouseover event triggered: <span id="over_span"></span></h3>
+        </div>
+
+        <div class="mouse" id="enter">
+            <h3 class="mouse">Mouseenter event triggered: <span id="enter_span"></span></h3>
+        </div>
+
+        <div class="mouse" id="move">
+            <h3 class="mouse">Mousemove event triggered: <span id="move_span"></span></h3>
+        </div>
+
+        <div class="footer">
+            To open the <code>dev console</code>, hit CTRL+SHIFT+J (⌘+Option+J on a Mac).
+        </div>
+    </div>
+
+    <div class="normal" id="click_event">
+        <br><hr>
+        <h3>The 'click' event.</h3>
+        <div><button id="btn_show_hide">Show Hidden Text</button></div><br>
+        <div id="hidden_text" hidden>This <code>div</code> is hidden until the button is clicked and should hide again
+            if the button is clicked a second time.</div>
+    </div>
+
+</body>
+
 </html>
